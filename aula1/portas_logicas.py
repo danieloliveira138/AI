@@ -4,7 +4,7 @@ options = [0,1,2,3,4]
 
 def get_option():
     try:
-        option = input("Select a boolean function.\n0 = AND\n1 = OR\n2 = NE\n3 = NOU\n4 = FINISH\nSelection: ")
+        option = input("Select a boolean function (0: AND; 1: OR; 2: NE; 3: NOU; 4: FINISH).\nSelection: ")
         int_option = int(option)
         if int_option in options:
             return int_option, get_port_name(int_option)
